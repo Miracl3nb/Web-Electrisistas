@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lilita+One&display=swap');
+body{
+    margin: 0 auto;
+    height: 100vh;
+    font-family: 'Lato', sans-serif !important;
+    
+}
+.llamado-urgencia{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(186, 24, 27, 0.8);*/
+    background-color: rgba(229, 56, 59, 0.8);
+    color: rgb(164, 22, 26);
+    border: 2px #A4161A solid ;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Lilita One', cursive;
+    
+}
+.llamado-urgencia span{margin:0% ;}
+
+
+/*Arituculo 1 p de prensentacion y botones de comunicacion */
+
+.articulo1{
+    position: relative;
+    background-image:url(/static/hym.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 15vh;
+}
+
+
+
+.cab{
+    text-align: center;
+    justify-self:center;
+    font-size: 32pt;
+    color: #05204A;
+    font-weight: bolder;
+    padding-top: 15vh;
+
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 20vh;
+    
+}
+
+
+.botones a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.botones a::after{
+    color: #fff;
+}
+
+.botones a:hover{
+    color: #fff;
+}
+
+#bllamada{
+    background-color:#4040ff;
+    border-color: #6161f5 solid 5px;    
+}
+
+#bwhatsapp{
+    background-color: #00ea38;
+    border-color: #06f83f  solid 5px;
+}
+.botones button{
+    padding: 20px 80px;
+}
+
+/*media query para ser responsive en celular*/
+@media  (max-width:470px) {
+    .llamado-urgencia{
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .articulo1{
+        background-size: contain;
+    }
+    .cab{
+        font-size: 12pt;
+        
+        padding-top: 4vh;
+    }
+    .botones{
+        margin-top: 5vh;
+    }
+
+    .botones button {
+        padding: 2px 10px;
+        margin-top: 0%;
+    }
+    .botones a{
+        font-size: medium;
+    }
+}
+
+
+/*seccion de servicios
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+*/
+
+.servicios{
+    background-image: url(./static/diagramabg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.list{
+    display: flex;
+    flex-flow: wrap; 
+    margin-top: 15%;
+}
+
+.titu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #05204A;
+    font-style: oblique;
+    background-color: #6161f5;
+    border-radius: 17px 45px;
+    
+}
+
+.titu h3{
+    font-size: 28pt;
+    font-weight: bold;
+}
+
+.cardp{
+    position: relative;
+    bottom: 150px;
+    left: 85px;
+    background-color: rgb(35, 41, 41, 0.5 ) !important;
+    margin-left: 25px;
+    border-color: rgb(35, 41, 41);
+    border: solid 0.5px !important;
+    color: #fff;
+    font-weight: 700;
+}
+/* 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 80px;
+    background-image: url(./static/Captura\ de\ pantalla\ 2023-07-07\ 102058.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 2px;
+    background-position: center top;
+    
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav h1{   
+    position: absolute;
+    color: #2B3467;
+    font-weight: bold;
+    font-size: 50pt;
+    
+}
+nav img{
+    position: relative;
+    opacity: .7;
+    height: fit-content;
+    
+
+}
+
+
+
+
+.bkg{
+    background-image: url(./static/hym.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.desc{   
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 400px;  
+    position: relative;
+}
+
+
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+@media  (max-width:769px ) {
+    .btn1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn2{
+        height: 90px;
+        width: 90px;
+        padding: 0%;
+        margin-left: 52px;
+        
+    }
+}
+
+.botones button{
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding: 40px 150px; 
+    color: #fff;
+    margin-top: 25px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.botones a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+*/
+
+
+
+/*Slaider 
+
+ul {
+    position: absolute;
+    top: 50%;
+    width: 800px;
+    height: 200px; 
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -130px;
+}
+*/ 
+/*
+li {
+    width: 25%;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    height: 200px; 
+    opacity: 0;
+    padding-top: 40px;
+    text-align: center;
+    transition: 1s opacity; 
+}
+
+
+
+p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #646566;
+    line-height: 1.5em;
+}
+
+strong { 
+color: #fff;
+font-weight: 700;
+    font-size: 60px; 
+line-height: 100px; 
+}
+*/
