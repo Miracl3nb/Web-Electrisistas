@@ -8,31 +8,75 @@ body{
 .llamado-urgencia{
     display: flex;
     flex-direction: column;
-    /* background-color: rgba(186, 24, 27, 0.8);*/
+    /* background-color: rgba(186, 24, 27, 0.8);
     background-color: rgba(229, 56, 59, 0.8);
+    background-color: rgb(255, 0, 0);*/
     color: rgb(164, 22, 26);
+    color: #fff;
+    text-transform: capitalize;;
+    font-style: oblique;
+    font-synthesis: style;
+    letter-spacing: 0.5px;
     border: 2px #A4161A solid ;
     align-items: center;
     justify-content: center;
-    padding-bottom: 15px;
+    padding-bottom: 2px;
     font-weight: 900;
     font-size: 25px;
     text-align: justify;
     font-family: 'Lilita One', cursive;
-    
+    border-bottom: #fff 8px solid;
+    border-right: #fff 8px solid;  
+    border-top: #fb0000 8px solid;
+    border-left: #fb0000 8px solid;  
 }
 .llamado-urgencia span{margin:0% ;}
+
+.bkg-ani{
+        background: linear-gradient(271deg, #e47474, #f53333, #fb0000);
+        background-size: 600% 600%;
+    
+        -webkit-animation: AnimationName 5s ease infinite;
+        -moz-animation: AnimationName 5s ease infinite;
+        -o-animation: AnimationName 5s ease infinite;
+        animation: AnimationName 5s ease infinite;
+    }
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 69%}
+        50%{background-position:100% 32%}
+        100%{background-position:0% 69%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 69%}
+        50%{background-position:100% 32%}
+        100%{background-position:0% 69%}
+    }
+    @-o-keyframes AnimationName {
+        0%{background-position:0% 69%}
+        50%{background-position:100% 32%}
+        100%{background-position:0% 69%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 69%}
+        50%{background-position:100% 32%}
+        100%{background-position:0% 69%}
+    }
+
+
+
 
 
 /*Arituculo 1 p de prensentacion y botones de comunicacion */
 
 .articulo1{
     position: relative;
+    top: 0.5vw;
     background-image:url(/static/hym.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom: 15vh;
+    padding-bottom: 18vw;
 }
 
 
@@ -114,6 +158,24 @@ body{
 }
 
 
+/*SEPARADOR*/
+
+.separador{
+    position: relative;
+    bottom: 13.1vw;
+    right: 1.5vw;
+    width: 0;
+    height: 0;
+    border-right: 100.3vw solid  transparent;
+    border-bottom: 13.8vw solid red;
+    margin-top: 0;
+    margin-bottom: 0%;
+    opacity:0.8 ;
+
+}
+
+
+
 /*seccion de servicios
 
     display: flex;
@@ -126,24 +188,30 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
 }
 
 
 .list{
+
+    left: 2vw;
     display: flex;
     flex-flow: wrap; 
-    margin-top: 15%;
+    margin-top: 0%;
+    width: 40vw;
+    height: 40vw;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .titu{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: #05204A;
     font-style: oblique;
-    background-color: #6161f5;
-    border-radius: 17px 45px;
-    
+    position: relative;
+        
 }
 
 .titu h3{
@@ -151,17 +219,143 @@ body{
     font-weight: bold;
 }
 
+
+
 .cardp{
-    position: relative;
-    bottom: 150px;
-    left: 85px;
-    background-color: rgb(35, 41, 41, 0.5 ) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 25, 75, 0.5 ) !important;
     margin-left: 25px;
-    border-color: rgb(35, 41, 41);
     border: solid 0.5px !important;
     color: #fff;
     font-weight: 700;
+    height:15vw ;
 }
+
+.list img{
+    width: 10vw;
+    margin-left: 2vw;
+
+}
+
+.aside-servicios{
+    position: relative;
+    bottom: 13vw;
+    width: 50vw;
+
+}
+
+/* caja modelo etiqueta test*/
+.titu h3{
+    padding: 10px;
+	color: #05204A;
+	font-weight: bold;
+	display: inline-block;
+	border-right: 30px solid transparent;
+	border-bottom: 50px solid #ff194b; 
+	height: 0;
+	line-height: 50px;
+    position: relative;
+    left: 38px;
+    font-size: larger;
+    padding-bottom: 0;
+}
+.list{
+    border: 3px solid #ff194b;	
+    border-top: 10px solid #ff194b;	   	 
+    padding: 20px;
+    position: relative;
+    bottom: 6px;
+    right: 80px;
+}
+
+
+.titulo-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 13vw;
+    border-top: 0px;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+.titulo-nosotros h2{
+    
+    padding: 250px;
+    padding-top: 0%;
+	color: #05204A;
+	font-weight: bold;
+	display: inline-block;
+	border-right: 30px solid transparent;
+	border-bottom: 50px solid #ff194b; 
+	height: 0;
+	line-height: 50px;
+    position: relative;
+    left: 38px;
+    font-size: xx-large;
+    padding-bottom: 0;
+
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+aside{
+
+    position: relative;
+    bottom: 24.4vw ;
+
+    
+}
+
+.noso{
+    width: 550px;
+    height: 400px;
+    margin: 25px;
+
+
+
+
+
+}
+.noso h3{
+    padding: 15px;
+	color: #05204A;
+	font-weight: bold;
+	display: inline-block;
+	border-right: 30px solid transparent;
+	border-bottom: 50px solid #ff194b; 
+	height: 0;
+	line-height: 50px;
+    position: relative;
+    top: 5px;
+    font-size: larger;
+    padding-bottom: 0;
+}
+
+
+
+
+
+.parrafo-bgk{
+    border: 3px solid #ff194b;	
+    border-top: 10px solid #ff194b;	   	 
+    padding: 20px;
+    color: #05204A;
+    font-weight: bold;
+    font-size: 16pt;
+
+}
+
+
 /* 
 nav{
     display: flex;
