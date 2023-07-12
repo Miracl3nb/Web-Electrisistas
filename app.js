@@ -8,7 +8,7 @@ function alertaInicial(){
 
 }
 
-
+alertaInicial()
 
 
 function envioExitoso(){
@@ -20,4 +20,4 @@ function envioExitoso(){
 }
 
 
-alertaInicial()
+//alertaInicial()
