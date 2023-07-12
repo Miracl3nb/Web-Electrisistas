@@ -1,9 +1,12 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 
 body{
     margin: 0 auto;
     height: 100vh;
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Questrial', sans-serif !important;
 }
 
 #icono{
@@ -90,11 +93,12 @@ body{
 
 .articulo1{
 
-    background-image:url(/static/hym.png);
+    background-image:url(/static/diagramabg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom: 8vw;
+    padding-bottom: 5vw;
+
 }
 
 
@@ -102,8 +106,9 @@ body{
 .cab{
     text-align: center;
     justify-self:center;
-    font-size: 32pt;
-    color: #071F40;
+    font-size: 42pt;
+    color: #04325B ;
+    -webkit-text-stroke: 0.1px #071F40 ;
     font-weight: bolder;
     padding-top: 15vh;
 
@@ -114,8 +119,8 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap-reverse;
-    margin-top: 20vh;
-    
+    margin-top: 40vh;
+    height: 220px;    
 }
 
 
@@ -135,7 +140,7 @@ body{
 
 #bllamada{
     background-color:#4040ff;
-    border-color: #6161f5 solid 5px;    
+    border-color: #6161f5 solid 5px;   
 }
 
 #bwhatsapp{
@@ -159,7 +164,12 @@ body{
         padding: 10px;
     }
     .articulo1{
-        background-size: contain;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .articulo1 p{
+        font-size: 20pt;
     }
     .cab{
         font-size: 12pt;
@@ -167,11 +177,12 @@ body{
         padding-top: 4vh;
     }
     .botones{
+        flex-direction: column;
         margin-top: 5vh;
     }
 
     .botones button {
-        padding: 2px 10px;
+        padding: 20px 90px;
         margin-top: 0%;
     }
     .botones a{
@@ -179,19 +190,17 @@ body{
     }
 
     .botones button svg{
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
     }
 
     .titulo-nosotros{
-        display: none;
-        border: #00ea38 solid;
-        height: 50px;
+        display:contents;
+        font-size: 10pt;
+        color: #071F40;
+        font-weight: bold;
     }
-    #h3jodido{
-        font-size: 12pt;
-        
-    }
+
     .nav-per a{
         font-size: 12pt;
     }
@@ -213,6 +222,19 @@ body{
         margin-bottom: 50px;
         padding: 70px 20px ;
     
+    }
+
+    .cobertura{
+        display: none;
+    }
+
+    .formulario{
+    width: 350px;
+    
+    }
+
+    .noso{
+        width: 450;
     }
 
 
@@ -262,6 +284,7 @@ body{
 
 
 }
+
 
 .titu{
     display: flex;
@@ -329,15 +352,19 @@ body{
     align-items: center;
 }
 
-.separador h3{
-    font-size: 24pt;
-}
+
 
 .titulo-nosotros{
     box-shadow: #04325B 0px 10px;
     padding-left: 150px;
     padding-right: 150px;
     margin-bottom: 150px;
+}
+
+.titulo-nosotros h3{
+    font-size: 32pt;
+    color: #071F40;
+    font-weight: bolder
 }
 /*
 .titulo-nosotros{
@@ -469,6 +496,9 @@ body{
 
 
 .bg-general {
+    background-color: #F2F2F2
+
+/*
     background: linear-gradient(55deg, #e1e1e1, #f2f2f2, #d6d6d6, #d6d6d6, #b5b5b5);
     background-size: 1000% 1000%;
 
@@ -491,7 +521,9 @@ body{
     0%{background-position:0% 88%}
     50%{background-position:100% 13%}
     100%{background-position:0% 88%}
+*/
 }
+
 
 
 
@@ -502,9 +534,12 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    background-color: #F2F2F2;
 }
 
-
+#contacto{
+    background-color: #F2F2F2
+}
 
 
 
@@ -532,6 +567,7 @@ body{
 	line-height: 50px;
     font-size: larger;
     padding-bottom: 0;
+    background-color: #F2F2F2
 }
 
 .cinta-contacto{
@@ -543,7 +579,7 @@ body{
     height: 250px;
     margin-top: 5px;
     color: #E2E2E2;
-    background-color: #04325B;
+    background-color: rgba(4, 50, 91, 0.9);
 }
 
 .c1, .c2 , .c3{
@@ -569,6 +605,50 @@ body{
 
 .cinta-contacto a:hover{color: #E2E1E1;}
 .cinta-contacto a:active{color:#E2E1E1}
+
+.pie-pagina-contenedor{
+    color: black ;
+    background-color: #E2E2E2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.p1{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 0%;
+}
+
+.p1 p{
+    font-size: 20pt;
+    padding: 20px 50px;
+    margin: 0%;
+    padding-left: 0%;
+}
+
+
+
+
+.p2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 50px;
+    margin: 0%;
+
+    padding-right: 0%;
+}
+
+.p2 svg{
+    margin: 5px;
+    color: black;
+}
+
 /* 
 
 
