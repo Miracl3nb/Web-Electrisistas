@@ -1,10 +1,10 @@
 //alerts
 function alertaInicial() {
-  swal({
-    title: "URGENCIAS",
-    text: "comunicate al 11 55258145",
-    icon: "warning",
-  });
+    swal({
+        title: "URGENCIAS",
+        text: "comunicate al 11 55258145",
+        icon: "warning",
+});
 }
 
 function envioExitoso() {
@@ -22,7 +22,7 @@ function faltandatos(){
         icon: 'error'
     })
 }
-
+alertaInicial()
 
 }
 
@@ -44,4 +44,4 @@ function validarFormulario(){
 
 
 
-//alertaInicial()
+alertaInicial()
