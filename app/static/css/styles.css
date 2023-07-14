@@ -94,7 +94,7 @@ body{
 
 .articulo1{
 
-    background-image:url();
+    background-image:url(/static/imgs/diagramabg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
