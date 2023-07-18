@@ -146,15 +146,15 @@
                 </aside>
                 <section class="contacto" id="contacto">
                     <div class="formularioCab bg-general">
-                        <form method="post" action="">
+                        <form method="post" action="/solicitud_contacto">
                             <h3>Dejanos un mensaje</h3>
                             <div class="formulario">
                                 <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" required="true">
+                                <input type="text" name="nombre"   id="nombre" required="true">
                                 <label for="correo">Correo electrónico:</label>
-                                <input type="email" id="correo" required="true">
+                                <input type="email" id="correo" name="correo" required="true">
                                 <label for="mensaje">Escribenos</label>
-                                <textarea name="mensaje" id="mensaje" cols="40" rows="5" required="true"></textarea>
+                                <textarea name="mensaje" id="mensaje" name="mensaje" cols="40" rows="5" required="true"></textarea>
                                 <input onclick="" class="btn btn-primary" type="submit" name="submit" id="enviar"
                                     value="enviar">
                             </div>
