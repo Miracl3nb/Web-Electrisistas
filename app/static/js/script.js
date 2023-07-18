@@ -45,3 +45,18 @@ function validarFormulario(){
 
 
 alertaInicial()
+
+
+function statusFormulario(){
+    fetch("http://127.0.0.1:5000/solicitud_contacto/")
+
+    .then(res => {
+        if (res.status == 200){
+            envioExitoso()
+        }else{
+            alertaInicial()
+        }
+    })
+}
+
+

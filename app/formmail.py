@@ -2,7 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-def envio_mail():
+def envio_mail(nombre, email, nota):
     #remitente
     REMITENTE = 'contacto.miracl3dev@gmail.com'
     KEY ='lscuaezfrvcieoqv'
@@ -19,7 +19,7 @@ def envio_mail():
 
     #cuerpo del mensaje
 
-    cuerpo = 'este mail es de prueba'
+    cuerpo = (f" Nuevo intento de contacto: \n nombre, {nombre} correo {email}  \n nota {nota} ")
     correo.attach(MIMEText(cuerpo, 'plain'))
 
     #sesion serv mail
