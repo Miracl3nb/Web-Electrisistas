@@ -1,4 +1,4 @@
-# Proyecto Web Simple
+# Proyecto Web Simple para micro empresa dedicada a la electricidad
 
 Este es un proyecto web sencillo que incluye una página de presentación y un módulo de contacto por correo electrónico. Está construido utilizando HTML, CSS, JavaScript, Bootstrap y Python.
 
