@@ -2,7 +2,7 @@
 function alertaInicial() {
     swal({
         title: "URGENCIAS",
-        text: "comunicate al 11 55258145",
+        text: "comunicate al TUNUMERO",
         icon: "warning",
 });
 }

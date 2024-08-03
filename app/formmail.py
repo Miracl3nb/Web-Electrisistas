@@ -1,13 +1,15 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from decouple import config
 
 def envio_mail(nombre, email, nota):
     #remitente
-    REMITENTE = 'contacto.miracl3dev@gmail.com'
-    KEY ='lscuaezfrvcieoqv'
+    REMITENTE = config('REMITENTE')
+    KEY = config('KEY')
     #destinatario
-    DESTINATARIO = 'miracl3nb@gmail.com'
+    DESTINATARIO = config('DESTINATARIO')
+    
     ASUNTO = 'Nueva solitidud de contacto'
 
     #mesaje
@@ -19,7 +21,7 @@ def envio_mail(nombre, email, nota):
 
     #cuerpo del mensaje
 
-    cuerpo = (f" Nuevo intento de contacto: \n nombre, {nombre} correo {email}  \n nota {nota} ")
+    cuerpo = (f" Nuevo intento de contacto: \n Nombre: {nombre}\n Correo: {email}  \n Nota: {nota} ")
     correo.attach(MIMEText(cuerpo, 'plain'))
 
     #sesion serv mail
